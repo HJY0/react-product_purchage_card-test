@@ -2,23 +2,18 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 40px;
   position: relative;
-}
-
-.counter:after {
-  content: '';
-  border: 1px solid #dee0e3;
-  width: 100%;
-  position: absolute;
-  margin-top: 65px;
+  border: 1px solid lightgray;
+  width: 102px;
+  height: 34px;
 }
 
 .button {
   width: 34px;
   height: 34px;
   background: #f1f2f4;
-  border: 1px solid lightgray;
+  border: none;
 }
 
 .count {
@@ -29,12 +24,22 @@
   align-items: center;
 }
 
+/* 총 상품 금액 */
 .total {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
+  margin-top: 13px;
+}
+
+.total:before {
+  content: '';
+  border: 1px solid #dee0e3;
+  width: 100%;
+  position: absolute;
+  margin-top: -53px;
 }
 
 .totalPriceInfo {
@@ -42,7 +47,13 @@
   font-size: 14px;
   font-weight: 700;
   position: relative;
-  left: -62px;
+}
+
+.totalDeploy {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 10px;
 }
 
 .totalCount {

@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
-  box-sizing: border-box;
-  width: 360px;
+  width: clamp(320px, 100vw, 600px);
+  background: white;
   padding: 16px;
   display: block;
 }

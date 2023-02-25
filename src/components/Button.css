@@ -1,7 +1,34 @@
 .purchaseBtn {
   border: none;
-  background: white;
-  width: 328px;
+  width: 100%;
+  height: 48px;
   position: relative;
   cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #03c75a;
+  border-radius: 6px;
+}
+
+.purchaseBtn:hover {
+  background: #0aae4f;
+}
+
+.purchaseBtn:disabled {
+  background: #dee0e3;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 7px;
 }

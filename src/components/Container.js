@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import productList from '../data/products';
 import './Container.css';
 
-export function Container() {
-  // const [product, setProduct] = useState(productList);
-  // const { name, sale, price } = productList
-  // console.log(productList.name);
-
+export function Container(count) {
   return (
     <main>
       <img
@@ -23,14 +19,16 @@ export function Container() {
         <p className="sale" tabIndex={0}>
           88%
         </p>
-        <span className="a11y">정가가</span>
-        <p className="originalprice" tabIndex={0}>
-          56,760원
-        </p>
-        <span className="a11y">할인가</span>
-        <p className="saleprice" tabIndex={0}>
-          6,370원
-        </p>
+        <div className="priceDeploy">
+          <span className="a11y">정가가</span>
+          <p className="originalprice" tabIndex={0}>
+            56,760원
+          </p>
+          <span className="a11y">할인가</span>
+          <p className="saleprice" tabIndex={0}>
+            6,370원
+          </p>
+        </div>
       </div>
       <div className="info">
         <span>택배배송</span>
