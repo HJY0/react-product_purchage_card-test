@@ -1,0 +1,7 @@
+.purchaseBtn {
+  border: none;
+  background: white;
+  width: 328px;
+  position: relative;
+  cursor: pointer;
+}

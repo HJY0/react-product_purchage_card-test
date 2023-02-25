@@ -8,7 +8,7 @@ export function Counter() {
 
   const handleMiusButton = () => {
     console.log('mius');
-    if (count > 1) {
+    if (count > 0) {
       setCount(count - 1);
     }
   };
@@ -24,15 +24,21 @@ export function Counter() {
         <button className="button" onClick={handleMiusButton}>
           -
         </button>
-        <p className="count">{count}</p>
+        <p className="count" tabIndex={0}>
+          {count}
+        </p>
         <button className="button" onClick={handlePlusButton}>
           +
         </button>
       </div>
       <div className="total">
         <p className="totalPriceInfo">총 상품 금액</p>
-        <p className="totalCount">총 수량 {count}개</p>
-        <p className="totalPrice">{priceToString(totalPrice)}원</p>
+        <p className="totalCount" tabIndex={0}>
+          총 수량 {count}개
+        </p>
+        <p className="totalPrice" tabIndex={0}>
+          {priceToString(totalPrice)}원
+        </p>
       </div>
     </>
   );
