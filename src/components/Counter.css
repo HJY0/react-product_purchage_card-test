@@ -1,0 +1,63 @@
+.counter {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+.counter:after {
+  content: '';
+  border: 1px solid #dee0e3;
+  width: 100%;
+  position: absolute;
+  margin-top: 65px;
+}
+
+.button {
+  width: 34px;
+  height: 34px;
+  background: #f1f2f4;
+  border: 1px solid lightgray;
+}
+
+.count {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.totalPriceInfo {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  left: -62px;
+}
+
+.totalCount {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.totalCount:after {
+  content: '|';
+  padding-left: 10px;
+}
+
+.totalPrice {
+  color: #6b90dc;
+  font-size: 22px;
+  font-weight: 700;
+}

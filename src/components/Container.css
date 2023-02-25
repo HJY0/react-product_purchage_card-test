@@ -1,0 +1,72 @@
+main {
+  display: block;
+  position: relative;
+}
+
+main h2 {
+  color: #333333;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+main h2:last-child {
+  margin-top: -12px;
+}
+
+.price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  align-items: center;
+  gap: 6px;
+  margin-top: -20px;
+}
+
+.price:after {
+  content: '';
+  border: 1px solid #dee0e3;
+  width: 100%;
+  position: absolute;
+  margin-top: 65px;
+}
+
+.price p:nth-child(1) {
+  color: #6b90dc;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  left: -125px;
+}
+
+.price p:nth-child(2) {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.price p:nth-child(3) {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.info:after {
+  content: '';
+  border: 1px solid #dee0e3;
+  width: 100%;
+  position: absolute;
+  margin-top: 65px;
+}
+
+.img {
+  background: url('../assets/product.svg') no-repeat;
+}
